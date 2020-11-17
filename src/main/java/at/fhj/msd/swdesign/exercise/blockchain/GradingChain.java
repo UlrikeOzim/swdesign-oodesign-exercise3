@@ -8,7 +8,7 @@ public class GradingChain {
     private List<GradingBlock> grades;
 
     public  GradingChain(){
-        grades= new ArrayList<>();
+        grades= new ArrayList<GradingBlock>();
     }
 
     public int getLastHash() {

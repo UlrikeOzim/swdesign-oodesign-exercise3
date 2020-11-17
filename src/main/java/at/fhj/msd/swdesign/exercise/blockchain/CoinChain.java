@@ -12,7 +12,7 @@ public class CoinChain implements IBlockChain {
     }
 
     private void initBlock() {
-        coins = new ArrayList<>();
+        coins = new ArrayList<CoinBlock>();
         CoinBlock coinBlock = new CoinBlock();
         coinBlock.mineBlock(0);
         coins.add(coinBlock);
