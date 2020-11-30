@@ -30,7 +30,8 @@ public class BlockChainMain {
 
         blockChainApp.setChain( new GradingChain());
         blockChainApp.addBlock(gradingBlock);
-        blockChainApp.addBlock(gradingBlock2);   blockChainApp.addBlock(gradingBlock3);
+        blockChainApp.addBlock(gradingBlock2);
+        blockChainApp.addBlock(gradingBlock3);
 
         blockChainApp.printOutput();
 

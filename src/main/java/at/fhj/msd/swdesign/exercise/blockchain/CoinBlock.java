@@ -2,7 +2,7 @@ package at.fhj.msd.swdesign.exercise.blockchain;
 
 import java.util.Objects;
 
-public class CoinBlock implements  IBlock{
+public class CoinBlock implements  ICoinBlock{
 
     private String senderName;
     private String receiverName;
@@ -18,9 +18,9 @@ public class CoinBlock implements  IBlock{
     }
 
 
-    public void doGrading(String name, String course, int grade) {
+    /*public void doGrading(String name, String course, int grade) {
 
-    }
+    }*/
 
 
     public boolean mineBlock(int prevHash){

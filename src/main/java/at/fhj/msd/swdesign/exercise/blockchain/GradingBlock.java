@@ -2,7 +2,7 @@ package at.fhj.msd.swdesign.exercise.blockchain;
 
 import java.util.Objects;
 
-public class GradingBlock implements IBlock {
+public class GradingBlock implements IGradingBlock {
 
     private String name;
     private String course;
@@ -24,9 +24,10 @@ public class GradingBlock implements IBlock {
   return true;
     }
 
+    /*
     public void performPayment(String senderName, String receiverName, double amount) {
 
-    }
+    }*/
 
 
     public int getHash() {
