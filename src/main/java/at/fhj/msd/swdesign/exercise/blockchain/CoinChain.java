@@ -3,7 +3,7 @@ package at.fhj.msd.swdesign.exercise.blockchain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CoinChain implements IBlockChain {
+public class CoinChain implements ICoinBlockChain {
 
     private List<CoinBlock> coins;
 

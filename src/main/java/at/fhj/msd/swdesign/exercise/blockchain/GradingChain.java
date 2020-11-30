@@ -3,7 +3,7 @@ package at.fhj.msd.swdesign.exercise.blockchain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GradingChain {
+public class GradingChain implements IGradingBlockChain {
 
     private List<GradingBlock> grades;
 
