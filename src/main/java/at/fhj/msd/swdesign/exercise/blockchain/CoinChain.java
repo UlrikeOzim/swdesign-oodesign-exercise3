@@ -18,7 +18,7 @@ public class CoinChain implements ICoinBlockChain {
         coins.add(coinBlock);
     }
 
-
+    @Override
     public int getLastHash() {
         int lasthash = 0;
 
@@ -28,7 +28,7 @@ public class CoinChain implements ICoinBlockChain {
         return lasthash;
     }
 
-
+    @Override
     public void addBlock(CoinBlock block) {
 
             block.mineBlock(getLastHash());
@@ -36,11 +36,11 @@ public class CoinChain implements ICoinBlockChain {
 
     }
 
-    public void addBlock(GradingBlock gradingBlock) {
+    /*public void addBlock(GradingBlock gradingBlock) {
 
-    }
+    }*/
 
-
+    @Override
     public boolean chainIsValid() {
         boolean isValid = false;
         CoinBlock currentBlock;
@@ -70,8 +70,8 @@ public class CoinChain implements ICoinBlockChain {
         return isValid;
 
     }
-
-    void printChain() {
+    @Override
+    public void printChain() {
         for (CoinBlock block : coins) {
             System.out.println(block);
         }

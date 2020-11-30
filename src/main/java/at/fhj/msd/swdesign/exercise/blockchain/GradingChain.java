@@ -11,6 +11,8 @@ public class GradingChain implements IGradingBlockChain {
         grades= new ArrayList<GradingBlock>();
     }
 
+
+    @Override
     public int getLastHash() {
         int lasthash = 0;
         if (grades.size() > 0) {
@@ -19,20 +21,21 @@ public class GradingChain implements IGradingBlockChain {
         return lasthash;
     }
 
-
+    @Override
     public void addBlock(GradingBlock block){
 
         block.mineBlock(getLastHash());
         grades.add(block);
 
     }
-
-    void printChain() {
+    @Override
+    public void printChain() {
         for (GradingBlock block : grades) {
             System.out.println(block);
         }
     }
 
+    @Override
     public boolean chainIsValid() {
         boolean isValid = false;
         GradingBlock currentBlock;

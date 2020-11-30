@@ -7,4 +7,6 @@ public interface IBlockChain {
     void addBlock(GradingBlock gradingBlock);*/
 
     boolean chainIsValid();
+    int getLastHash();
+    void printChain();
 }
